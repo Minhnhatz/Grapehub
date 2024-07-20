@@ -439,7 +439,7 @@ LoadButton.Position = UDim2.new(0.5, 0, 0.5, 0)
 LoadButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 LoadButton.BackgroundTransparency = 1.000
 LoadButton.Size = UDim2.new(0, 70, 0, 70)
-LoadButton.Image = "http://www.roblox.com/asset/?id=18564707068"
+LoadButton.Image = "http://www.roblox.com/asset/?id=10731738718"
 LoadButton.ImageTransparency = 1
 
 local ClickFrame = Instance.new("Frame")
@@ -1083,7 +1083,7 @@ function Library.new()
 		Icon.BackgroundTransparency = 1.000
 		Icon.Position = UDim2.new(0.5, 0, 0.5, 0)
 		Icon.Size = UDim2.new(0, 30, 0, 30)
-		Icon.Image = "http://www.roblox.com/asset/?id="..tostring(Logo)
+		Icon.Image = "http://www.roblox.com/asset/?id=18564707068"..tostring(Logo)
 		Icon.ImageColor3 = Color3.fromRGB(255, 255, 255)
 		Icon.AutoButtonColor = false
 
@@ -3023,14 +3023,14 @@ end
 
 function LoadSettings()
 	if readfile and writefile and isfile and isfolder then
-		if not isfolder("Unique Hub Premium Scripts") then
-			makefolder("Unique Hub Premium Scripts")
+		if not isfolder("MeoMeoZ Hub Free Scripts") then
+			makefolder("MeoMeoZ Hub Free Scripts")
 		end
-		if not isfolder("Unique Hub Premium Scripts/Blox Fruits/") then
-			makefolder("Unique Hub Premium Scripts/Blox Fruits/")
+		if not isfolder("MeoMeoZ Hub Free Scripts/Blox Fruits/") then
+			makefolder("MeoMeoZ Hub Free Scripts/Blox Fruits/")
 		end
-		if not isfile("Unique Hub Premium Scripts/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json") then
-			writefile("Unique Hub Premium Scripts/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json", game:GetService("HttpService"):JSONEncode(_G.Settings))
+		if not isfile("MeoMeoZ Hub Free Scripts/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json") then
+			writefile("MeoMeoZ Hub Free Scripts/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json", game:GetService("HttpService"):JSONEncode(_G.Settings))
 		else
 			local Decode = game:GetService("HttpService"):JSONDecode(readfile("Unique Hub Premium Scripts/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json"))
 			for i,v in pairs(Decode) do
@@ -3052,7 +3052,7 @@ function SaveSettings()
 			for i,v in pairs(_G.Settings) do
 				Array[i] = v
 			end
-			writefile("Unique Hub Premium Scripts/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json", game:GetService("HttpService"):JSONEncode(Array))
+			writefile("MeoMeoZ Hub Free Scripts/Blox Fruits/" .. game.Players.LocalPlayer.Name .. ".json", game:GetService("HttpService"):JSONEncode(Array))
 		end
 	else
 		return warn("Status : Undetected Executor")
@@ -6011,7 +6011,6 @@ function CheckOldQuest(LevelFarm)
             NameMon = "Isle Champion"
             CFrameQuest = CFrame.new(-16539.078125, 55.68632888793945, 1051.5738525390625)
             CFrameMon = CFrame.new(-16933.2129, 93.3503036, 999.450989)
-        end
 		end
 	end
 end
