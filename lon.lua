@@ -19,7 +19,7 @@ repeat wait() until game:GetService("ReplicatedStorage").Effect.Container
 
 _G.SettingsUI = {
 	Configs = {
-		ColorUI = Color3.fromRGB(255, 0, 127),
+		ColorUI = Color3.fromRGB(255, 0, 255),
 		Key = Enum.KeyCode.RightControl
 	}
 }
@@ -439,7 +439,7 @@ LoadButton.Position = UDim2.new(0.5, 0, 0.5, 0)
 LoadButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 LoadButton.BackgroundTransparency = 1.000
 LoadButton.Size = UDim2.new(0, 70, 0, 70)
-LoadButton.Image = "http://www.roblox.com/asset/?id=10731738718"
+LoadButton.Image = "http://www.roblox.com/asset/?id=18564707068"
 LoadButton.ImageTransparency = 1
 
 local ClickFrame = Instance.new("Frame")
@@ -455,7 +455,7 @@ local SoundClick = Instance.new("Sound")
 
 SoundClick.Name = "Sound Effect"
 SoundClick.Parent = Load
-SoundClick.SoundId = "rbxassetid://18564707068"
+SoundClick.SoundId = "rbxassetid://130785805"
 SoundClick.Volume = 1
 
 local Blur = Instance.new("BlurEffect")
