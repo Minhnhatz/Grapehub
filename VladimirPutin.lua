@@ -2282,8 +2282,8 @@ ImageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.5, 10, 0, 10) 
-ImageButton.AnchorPoint = Vector2.new(0.5,) 
-ImageButton.Size = UDim2.new(0, 40, 0, 40)
+ImageButton.AnchorPoint = Vector2.new(0.5, 0) 
+ImageButton.Size = UDim2.new(0, 0.1, 0, 0.1)
 ImageButton.Image = "rbxassetid://18485588071"
 
 UICorner.CornerRadius = UDim.new(1, 0) 
