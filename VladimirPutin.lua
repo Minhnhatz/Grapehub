@@ -1,6 +1,6 @@
 local NotificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/lobox920/Notification-Library/Main/Library.lua"))()
 
-NotificationLibrary:SendNotification("Thank Use MeMeoXHub", "Cảm Ơn Vì Đã Sử Dụng", 10)
+NotificationLibrary:SendNotification("Thank Use MeMeoXHub", "Bug Report In Discord", 10)
 NotificationLibrary:SendNotification("Warning", "Join Discord : .gg/rZKkuzFTsh", 10)
 
 -- join team
@@ -2283,8 +2283,8 @@ ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.5, 10, 0, 10) 
 ImageButton.AnchorPoint = Vector2.new(0.5, 0) 
-ImageButton.Size = UDim2.new(0, 40, 0, 35)
-ImageButton.Image = "rbxassetid://18485588071"
+ImageButton.Size = UDim2.new(2, 40, 2, 45)
+ImageButton.Image = "rbxassetid://18564707068"
 
 UICorner.CornerRadius = UDim.new(1, 0) 
 UICorner.Parent = ImageButton
@@ -2468,7 +2468,7 @@ function RedeemCode(value)
     
     Tabs.Main:AddParagraph({
         Title = "Please Read About Kaitun",
-        Content = "Kaitun does not have fast farming and player hunter only helps you farm normal levels and do quest items "
+        Content = "Kaitun Will Not Help You Farm Fast and Hunter Player, It Only Helps You Some Basic Things Like Farm Levels and Quest Items"
     })
     
     local ToggleSkipLevelQuest = Tabs.Main:AddToggle("ToggleSkipLevelQuest", {
@@ -4249,7 +4249,7 @@ end)
     
     Tabs.Main:AddParagraph({
         Title = "What is Speed TW?",
-        Content = "The higher the Speed TW, the faster your movement speed will be, but exceeding 350 will result in an error, Recommend 300-325 "
+        Content = "The Higher the Tween Speed, the Faster You Fly, We Recommend You Use 300-350"
     })
     
     local DropdownTweenSpeed = Tabs.Main:AddDropdown("DropdownTweenSpeed", {
@@ -6530,7 +6530,7 @@ Tabs.RC:AddButton({
         end
     })
 
-local Toggle = Tabs.RC:AddToggle("MyToggle", {Title = "Kill Player Trial / No Skill", Default = false })
+local Toggle = Tabs.RC:AddToggle("MyToggle", {Title = "Kill Player Trial + No Skill", Default = false })
 
     Toggle:OnChanged(function(Value)
         KillPlayer = Value
@@ -6558,7 +6558,7 @@ spawn(function()
     end
 end)
 
-local Toggle = Tabs.RC:AddToggle("MyToggle", {Title = "Kill Player Trial / Spam Skill", Default = false })
+local Toggle = Tabs.RC:AddToggle("MyToggle", {Title = "Kill Player Trial + Spam Skill", Default = false })
 
     Toggle:OnChanged(function(Value)
         KillPlayerSpam = Value
