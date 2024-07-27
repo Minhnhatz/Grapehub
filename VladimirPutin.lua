@@ -2282,16 +2282,14 @@ ImageButton1.Size = UDim2.new(0, 50, 0, 50)
 ImageButton1.Draggable = true
 ImageButton1.Image = "rbxassetid://18564707068"
 ImageButton1.MouseButton1Down:connect(function()
-game:GetService("VirtualInputManager"):SendKeyEvent(true,Enum.KeyCode.LeftControl,false,game)
+local game:GetService("VirtualInputManager"):SendKeyEvent(true,Enum.KeyCode.LeftControl,false,game)
 UICorner.CornerRadius = UDim.new(1, 0) 
 UICorner.Parent = ImageButton
-
 UIStroke.Color = Color3.fromRGB(75, 0, 130)
 UIStroke.Parent = ImageButton
      end
    end
 end )
-
 --- Thêm phần thay đổi màu RGB liên tục cho UIStroke
 local colors = {
     Color3.fromRGB(255, 0, 0),   -- Đỏ
