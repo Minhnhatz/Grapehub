@@ -2265,31 +2265,33 @@ local sound = Instance.new("Sound")
 sound.Name = "ButtonClickSound"
 sound.SoundId = soundId
 sound.Parent = ReplicatedStorage 
-local ScreenGui1 = Instance.new("ScreenGui")
-local ImageButton1 = Instance.new("ImageButton")
+local MainScreenGui = Instance.new("ScreenGui")
+local ButtonScreenGui = Instance.new("ScreenGui")
+local ImageButton = Instance.new("ImageButton")
 local UICorner = Instance.new("UICorner")
-local UIGradient = Instance.new("UIGradient")
 local UIStroke = Instance.new("UIStroke")
-ScreenGui1.Name = "ImageButton"
-ScreenGui1.Parent = game.CoreGui
-ScreenGui1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-ImageButton1.Parent = ScreenGui1
-ImageButton1.BackgroundColor3 = Color3.fromRGB(0, 239, 5)
-ImageButton1.BorderSizePixel = 0
-ImageButton1.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
-ImageButton1.Size = UDim2.new(0, 50, 0, 50)
-ImageButton1.Draggable = true
-ImageButton1.Image = "rbxassetid://18564707068"
-ImageButton1.MouseButton1Down:connect(function()
-local game:GetService("VirtualInputManager"):SendKeyEvent(true,Enum.KeyCode.LeftControl,false,game)
+MainScreenGui.Name = "MainScreenGui"
+MainScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+ButtonScreenGui.Name = "ButtonScreenGui"
+ButtonScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+ImageButton.Parent = ButtonScreenGui
+ImageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.5, 10, 0, 10) 
+ImageButton.AnchorPoint = Vector2.new(0.5, 0) 
+ImageButton.Size = UDim2.new(10, 60, 10, 60)
+ImageButton.Image = "rbxassetid://18485588071"
+
 UICorner.CornerRadius = UDim.new(1, 0) 
 UICorner.Parent = ImageButton
+
 UIStroke.Color = Color3.fromRGB(75, 0, 130)
 UIStroke.Parent = ImageButton
-     end
-   end
-end )
+
 --- Thêm phần thay đổi màu RGB liên tục cho UIStroke
 local colors = {
     Color3.fromRGB(255, 0, 0),   -- Đỏ
