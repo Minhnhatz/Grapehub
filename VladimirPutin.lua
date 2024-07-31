@@ -7314,7 +7314,7 @@ ToggleSeaBeAst:OnChanged(function(Value)
             end)
         end
     end)
-
+})
 local ToggleAutoW = Tabs.SV:AddToggle("ToggleAutoW", {Title = "Auto Press W",Description = "Tự Động Lái Thuyền", Default = false })
 ToggleAutoW:OnChanged(function(Value)
     _G.AutoW = Value
