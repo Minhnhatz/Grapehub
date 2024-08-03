@@ -1,21 +1,15 @@
--- KEY SYSTEM V2 UI LIBRARY:
--- UI by mr.xrer | Code by mstudio45
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter0/keysystemv2api/master/setup.lua"))()
+local KeySystem = _G.KSS.classes.keysystem.new("WindyHub") -- Create class KeySystem
+local Key = KeySystem:key('key_user') -- Create class Key
 
-local KeySystemUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter0/keysystemv2api/master/ui/xrer_mstudio45.lua"))()
-KeySystemUI.New({
-    ApplicationName = "WindyHub", -- Your Key System Application Name
-    Name = "MeoMeoXHub", -- Your Script name
-    Info = "Hello User", -- Info text in the GUI, keep empty for default text.
-    DiscordInvite = "", -- Optional.
-    AuthType = "ip" -- Can select verification with ClientId or IP ("clientid" or "ip")
-})
-repeat task.wait() until KeySystemUI.Finished() or KeySystemUI.Closed
-if KeySystemUI.Finished() and KeySystemUI.Closed == false then
-    print("Key verified, can load script")
+if Key.finish and Key:verifyHWID() then
+  print("Good")
+else
+  print("Bad")
 end
-		-- main.lua check
-			--
-			local IsRaw = false
+                        -- main.lua check
+			--[[         
+                        local IsRaw = false
 			local Range = 1 or 14
 			for i, v in next, getconstants(Range) do
 				if v == "ТUРLЕ" then
@@ -27,8 +21,6 @@ end
 				warn("directly executed")
 			end
 			--]]
-		-- main.lua check
-		
 		local ArrayField = loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3AArrayfield%20Library"))() --Documentation url: https://docs.sirius.menu/community/arrayfield
 		
 		--Window
