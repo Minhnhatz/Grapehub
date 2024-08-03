@@ -7,14 +7,14 @@ KeySystemUI.New({
     Name = "MeoMeoXHub", -- Your Script name
     Info = "Hello User", -- Info text in the GUI, keep empty for default text.
     DiscordInvite = "", -- Optional.
-    AuthType = "clientid" -- Can select verification with ClientId or IP ("clientid" or "ip")
+    AuthType = "ip" -- Can select verification with ClientId or IP ("clientid" or "ip")
 })
 repeat task.wait() until KeySystemUI.Finished() or KeySystemUI.Closed
 if KeySystemUI.Finished() and KeySystemUI.Closed == false then
     print("Key verified, can load script")
 end
 		-- main.lua check
-			--[[
+			--
 			local IsRaw = false
 			local Range = 1 or 14
 			for i, v in next, getconstants(Range) do
@@ -119,7 +119,7 @@ end
 		
 		--Functions
 		
-		--[[
+		--
 		local VisualCDFunction
 		
 		if getgc and debug and debug.getinfo and getfenv then
