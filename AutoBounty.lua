@@ -640,7 +640,8 @@ local Seperator = Section:Seperator("Hello User ")
 local ScriptTask1= Section:Paragraph({
     ["Title"] = "Copy Discord Link",
     ["Content"] = "Loading..."
-}) 
+})
+local MainTab = sitinkgui:MakeTab("Main")
 local ScriptTask2 = Section:Button({
     ["Title"] = "Hop Server",
     ["Content"] = "Get New Sever",
@@ -649,6 +650,7 @@ local ScriptTask2 = Section:Button({
          HopSever()
     end
 })
+local MainTab = sitinkgui:MakeTab("Discord")
 local ScriptTask3 = Section:Button({
     ["Title"] = "Discord",
     ["Content"] = "Join For Get Notification Update",
